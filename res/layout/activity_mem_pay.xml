@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+      android:background="@drawable/background"
+      
+    >
+
+      <LinearLayout
+        android:id="@+id/linlaHeaderProgress"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:id="@+id/pbHeaderProgress"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </ProgressBar>
+    </LinearLayout>
+ <LinearLayout
+            android:id="@+id/main_panel"
+   			android:layout_width="match_parent"
+   			android:layout_height="match_parent"
+  			android:orientation="vertical"
+  			
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+ 			android:weightSum="4"
+ 			android:background="@drawable/card_background"
+         >
+        
+        
+
+             <RelativeLayout
+   				 android:id="@+id/mem_id_layout"
+   				 android:layout_width="match_parent"
+   				 android:layout_height="0dp"
+  				  android:layout_weight="1"
+    >
+          <TextView
+        android:id="@+id/mem_id_label"
+        android:gravity="left"
+        android:textSize="20sp"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="#ffffff"
+        android:text="Member ID"
+        />
+          <View
+         android:layout_width="2dp"
+         android:layout_height="40dp"
+         android:layout_marginTop="5dp"
+         android:layout_centerHorizontal="true"
+         android:layout_centerVertical="true"
+         android:background="@android:color/darker_gray" />
+          
+   
+          
+          <EditText
+        android:id="@+id/mem_id"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:hint=" ex: COL-1"
+        android:textColor="#ffffff"
+ 
+        
+        />
+
+</RelativeLayout>
+
+                  <RelativeLayout
+    android:id="@+id/group_id_layout"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    
+    android:layout_weight="1"
+    >
+          
+                           <TextView
+        android:id="@+id/group_id_label"
+        android:gravity="left"
+        android:textSize="20sp"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="#ffffff"
+        android:text="Group ID"
+        />
+          <View
+         android:layout_width="2dp"
+         android:layout_height="40dp"
+         android:layout_marginTop="5dp"
+         android:layout_centerHorizontal="true"
+         android:layout_centerVertical="true"
+         android:background="@android:color/darker_gray" />
+          
+   
+          
+          <EditText
+        android:id="@+id/group_id"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:hint=" ex: COL-1"
+        android:textColor="#ffffff"
+ 
+        
+        />
+	   
+
+</RelativeLayout>
+
+                  <RelativeLayout
+   			 android:id="@+id/amount_layout"
+   			 android:layout_width="match_parent"
+  			  android:layout_height="0dp"
+  			   android:layout_weight="1"
+    >
+                           <TextView
+        android:id="@+id/amount_label"
+        android:gravity="left"
+        android:textSize="20sp"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="#ffffff"
+        android:text="Amount"
+        />
+          <View
+         android:layout_width="2dp"
+         android:layout_height="40dp"
+         android:layout_marginTop="5dp"
+         android:layout_centerHorizontal="true"
+         android:layout_centerVertical="true"
+         android:background="@android:color/darker_gray" />
+          
+   
+          
+          <EditText
+        android:id="@+id/amount"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:hint="Rs:4000"
+        android:textColor="#ffffff"
+ 
+        
+        />
+           
+
+   
+</RelativeLayout>
+                <RelativeLayout
+   			 android:id="@+id/pay_layout"
+   			 android:layout_width="match_parent"
+  			  android:layout_height="0dp"
+  			   android:layout_weight="1"
+  			 
+    >
+           <Button
+        android:id="@+id/pay_button"
+        android:textColor="#F0EEF1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/book_button"
+        android:text="Make Payment" />
+           
+                   <TextView
+        android:id="@+id/message"
+        android:gravity="center"
+        android:textSize="15dp"
+        android:layout_below="@+id/pay_button"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="#21BE62"
+        android:text="Payment Successful!"
+        />
+    </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>
